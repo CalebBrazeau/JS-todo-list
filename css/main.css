@@ -1,0 +1,49 @@
+p {
+    margin-bottom: 0 !important;
+}
+.todo-container {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.todo-item-container {
+    min-width: 300px;
+    min-height: 25px;
+    background: linear-gradient(160deg, rgba(38,38,38,1) 0%, rgba(52,52,52,1) 100%);
+    margin: 1rem;
+    padding: .3rem;
+}
+.todo-complete-container {
+    padding: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-content-container {
+    margin: .3rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-remove-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.del-icon {
+    width: 24px !important;
+    height: 24px !important;
+}
+.del-btn {
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    /* min-width:  34px;
+    min-height: 34px;
+    max-width:  34px;
+    max-height: 34px; */
+}

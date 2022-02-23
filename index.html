@@ -5,8 +5,50 @@
     <!-- MD5 -->
     <link href="/css/mdb/mdb.dark.min.css" rel="stylesheet">
     <script src="/js/mdb/mdb.min.js"></script>
+    <!-- CSS -->
+    <link href="/css/main.css" rel="stylesheet">
+    <!-- Goo-Goo -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <h1>Add mdb files</h1>
+    <div class="container shadow rounded">
+        <div class="d-flex justify-content-center">
+            <h1>TODO List</h1>
+        </div>
+        <hr>
+        <div id="todo-container" class="d-flex justify-content-center todo-container">
+<!------------------------------------------------------------------------------------------------->
+            <div id="todo-1" class="d-flex todo-item-container shadow rounded">
+                <div id="todo-complete-container" class="todo-complete-container">
+                    <input type="checkbox"></input>
+                </div>
+                <div id="todo-content-container" class="todo-content-container">
+                    <p>Test look for todo item. But I need the text to overflow so I am adding random garbage</p>
+                </div>
+                <div id="todo-remove-container" class="todo-remove-container">
+                    <button class="del-btn shadow" id="remove-item">
+                        <img src="img/icons/icons8-delete.svg" alt="Delete Icon" class="del-icon">
+                    </button>
+                </div>
+            </div>
+<!------------------------------------------------------------------------------------------------->
+            <div id="todo-1" class="d-flex todo-item-container shadow rounded">
+                <div id="todo-complete-container" class="todo-complete-container">
+                    <input type="checkbox"></input>
+                </div>
+                <div id="todo-content-container" class="todo-content-container">
+                    <p>Test look for todo item. But I need the text to overflow so I am adding random garbage</p>
+                </div>
+                <div id="todo-remove-container" class="todo-remove-container">
+                    <button class="del-btn shadow" id="remove-item">
+                        <img src="img/icons/icons8-delete.svg" alt="Delete Icon" class="del-icon">
+                    </button>
+                </div>
+            </div>
+<!------------------------------------------------------------------------------------------------->
+        </div>
+    </div>
 </body>
 </html>
