@@ -6,6 +6,7 @@ p {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 .todo-item-container {
     min-width: 300px;
@@ -23,15 +24,20 @@ p {
 .todo-content-container {
     margin: .3rem !important;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-width: 390px;
+    text-align: left;
 }
 .todo-remove-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+.add-todo-item {
+    justify-content: center;
+}
 .del-icon {
     width: 24px !important;
     height: 24px !important;
