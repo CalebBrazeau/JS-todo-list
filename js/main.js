@@ -1,3 +1,19 @@
+const todoItems = {
+    items: {},
+    count: 0
+}; 
+function deleteToDoItem(todoItem) {
+    var itemContainer = todoItem.parentNode.parentNode;
+    console.log(itemContainer);
+    console.log(itemContainer.id + " Removed!");
+    itemContainer.remove();
+    if($("[id=todo-container]")[0].children.length <= 0) {
+        var h1 = document.createElement("h1");
+        h1.id = "no-items-left";
+        h1.innerHTML = "No todo Items!";
+        $("[id=todo-container]").prepend(h1);
+    }
+}
 function createToDoItem() {
     var chillen = $("#todo-container").children();
     
