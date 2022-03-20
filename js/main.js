@@ -97,3 +97,13 @@ function createToDoItem() {
     if($("#no-items-left"))
         $("#no-items-left").remove();
 }
+function storeTODOItem() {
+    for (let i = 0; i < $("#todo-container").children().length; i++) {
+        var daBaby = $("#todo-container").children()[i];
+        todoItems.items["todo-" + i] = {checked: daBaby.children[0].children[0].checked, text: daBaby.children[1].innerHTML};
+    }
+    for(let x in todoItems.items) {
+        console.log(todoItems.items[x].text);
+    }
+    console.table(todoItems.items);
+}
