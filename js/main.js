@@ -107,3 +107,6 @@ function storeTODOItem() {
     }
     console.table(todoItems.items);
 }
+function test() {
+    var test = "Test function for linux install";
+}
